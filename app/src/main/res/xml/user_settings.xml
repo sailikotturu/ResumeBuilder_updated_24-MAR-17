@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <Preference
+            android:title="version"
+            android:summary="version text"
+            android:key="version_info" />
+
+        <Preference
+            android:title="LOGOUT"
+            android:key="logout_btn" />
+
+
+
+
+
+
+
+</PreferenceScreen>

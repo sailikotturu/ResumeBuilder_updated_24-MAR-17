@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_interests_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.sailik.resumebuilder_24_feb.InterestsDialog">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar_addinterests"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:text="Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mytoolbar_addinterests"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+
+        android:id="@+id/addinterest_label_tv" />
+    <TextView
+        android:text="Add Interest : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addinterest_label_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/addinterest_tv" />
+    <EditText
+        android:text="Interest here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/addinterest_label_tv"
+        android:layout_toEndOf="@+id/addinterest_tv"
+        android:layout_toRightOf="@+id/addinterest_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:maxLength="20"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/addinterest_editText" />
+
+
+
+
+</RelativeLayout>

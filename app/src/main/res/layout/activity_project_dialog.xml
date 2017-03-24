@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+tools:context=".ProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar_addproject"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <TextView
+        android:text="Project Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytoolbar_addproject"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/projectname_label_tv" />
+
+    <EditText
+
+        android:hint="fill here.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytoolbar_addproject"
+        android:layout_toRightOf="@+id/projectname_label_tv"
+        android:layout_toEndOf="@+id/projectname_label_tv"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/projectname_desc_editText" />
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectname_desc_editText"
+        android:layout_alignLeft="@+id/projectname_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/projectdesc_label_tv" />
+
+    <EditText
+
+        android:hint="fill here.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/projectdesc_label_tv"
+        android:layout_toRightOf="@+id/projectdesc_label_tv"
+        android:layout_below="@+id/projectname_desc_editText"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/textColorPrimary"
+        android:maxLength="100"
+
+
+
+        android:id="@+id/projectdesc_editText" />
+
+    <TextView
+        android:text="Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectdesc_editText"
+        android:layout_alignLeft="@+id/projectdesc_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/projectduration_label_tv" />
+
+
+    <EditText
+
+        android:hint="fill here.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/projectduration_label_tv"
+        android:layout_toRightOf="@+id/projectduration_label_tv"
+        android:layout_below="@+id/projectdesc_editText"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/textColorPrimary"
+        android:maxLength="30"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/projectduration_editText" />
+
+
+<!--<Button-->
+    <!--android:id="@+id/cancel_btn_id"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/projectduration_editText"-->
+    <!--android:layout_alignLeft="@+id/projectduration_label_tv"-->
+
+
+
+    <!--android:text="Cancel" />-->
+    <!--<Button-->
+        <!--android:id="@+id/ok_btn_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/projectduration_editText"-->
+
+        <!--android:layout_toEndOf="@+id/cancel_btn_id"-->
+        <!--android:layout_toRightOf="@+id/cancel_btn_id"-->
+        <!--android:layout_marginLeft="50dp"-->
+
+        <!--android:text="OK" />-->
+
+
+
+
+
+</RelativeLayout>

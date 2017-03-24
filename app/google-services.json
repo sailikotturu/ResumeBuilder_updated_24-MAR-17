@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "899354920631",
+    "project_id": "resumebuilder-160105"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899354920631:android:2f37769d2e10cac1",
+        "android_client_info": {
+          "package_name": "com.example.sailik.resumebuilder_24_feb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899354920631-e1encibh2cl2pvgfesbd6tb73ua4e4d6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sailik.resumebuilder_24_feb",
+            "certificate_hash": "4c88561fba9a4ce90dd49bf99ec1620a0a5a450c"
+          }
+        },
+        {
+          "client_id": "899354920631-sdufr8jqu4aue6dl9i1abjh0av9hcn9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD965SVOD8XdCyAF1zjkfLacfKMtulFCQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

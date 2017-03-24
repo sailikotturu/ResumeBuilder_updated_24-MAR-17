@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_bg"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:text="Education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/education_label_tv" />
+    <TextView
+        android:text="Course Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_edit_button"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="20dp"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/coursename_label_tv" />
+    <TextView
+        android:text="Course Name here.............................................................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_edit_button"
+        android:layout_toRightOf="@+id/coursename_label_tv"
+        android:layout_toEndOf="@+id/coursename_label_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/coursename_desc_tv" />
+    <EditText
+        android:text="Coursename.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_label_tv"
+        android:layout_toRightOf="@+id/coursename_label_tv"
+        android:layout_toEndOf="@+id/coursename_label_tv"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/coursename_desc_editText" />
+    <TextView
+        android:text="College: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coursename_label_tv"
+        android:layout_alignLeft="@+id/coursename_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/collegename_label_tv" />
+    <TextView
+        android:text="College name here......................................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/collegename_label_tv"
+        android:layout_toRightOf="@+id/collegename_label_tv"
+        android:layout_below="@+id/coursename_desc_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="50"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/collegename_desc_tv" />
+    <EditText
+        android:text="College name here....."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/collegename_label_tv"
+        android:layout_toRightOf="@+id/collegename_label_tv"
+        android:layout_below="@+id/coursename_desc_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="50"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/collegename_desc_editText" />
+
+    <TextView
+        android:text="Duration: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collegename_desc_tv"
+        android:layout_alignLeft="@+id/collegename_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/duration_label_tv" />
+
+    <TextView
+        android:text="Duration here..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/duration_label_tv"
+        android:layout_toRightOf="@+id/duration_label_tv"
+        android:layout_below="@+id/collegename_desc_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="30"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/duration_desc_tv" />
+    <EditText
+        android:text="Duration here..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/duration_label_tv"
+        android:layout_toRightOf="@+id/duration_label_tv"
+        android:layout_below="@+id/collegename_desc_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="30"
+        android:visibility="gone"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/duration_desc_editText" />
+
+    <TextView
+        android:text="Read more..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:clickable="true"
+
+        android:layout_below="@+id/duration_desc_tv"
+        android:layout_alignRight="@+id/education_edit_button"
+        android:layout_marginTop="10dp"
+        android:id="@+id/readmore_education_tv" />
+    <Button
+        android:text="EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/education_edit_button" />
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/readmore_education_tv"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/collegename_desc_tv"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:id="@+id/education_ok_button" />
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        android:id="@+id/addeducation_button" />
+
+</RelativeLayout>

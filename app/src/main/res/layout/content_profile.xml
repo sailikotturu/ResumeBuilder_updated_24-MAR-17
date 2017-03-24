@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_profile"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sailik.resumebuilder_24_feb.ProfileActivity"
+    tools:showIn="@layout/app_bar_profile">
+
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+
+
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/recyclerView"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"
+        android:id="@+id/resume_header"
+        android:weightSum="3">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+
+            android:id="@+id/imageView"
+
+            android:layout_weight="1.25"/>
+
+        <!--android:background="@drawable/image_border"-->
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.75">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_editText"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"
+
+                />
+            <TextView
+
+                android:layout_alignLeft="@id/name_editText"
+                android:paddingLeft="5dp"
+                android:layout_below="@id/name_editText"
+                android:textSize="15sp"
+
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_editText"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+            <TextView
+                android:text="Experience: "
+                android:layout_alignStart="@id/email_editText"
+                android:layout_alignLeft="@id/email_editText"
+                android:layout_below="@id/email_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="normal"
+                android:id="@+id/exp_label_tv"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="77"
+                android:id="@+id/exp_tv"
+                android:textSize="15sp"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="italic"
+                android:maxLength="9"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/email_editText"
+                android:layout_toRightOf="@+id/exp_label_tv"
+                android:layout_toEndOf="@+id/exp_label_tv"
+                />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:id="@+id/exp_editText"
+                android:textSize="15sp"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="italic"
+                android:maxLength="9"
+                android:layout_below="@id/email_editText"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/exp_label_tv"
+                android:layout_toEndOf="@+id/exp_label_tv"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"
+        android:id="@+id/resume_aboutme">
+        <TextView
+            android:text="About me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColorPrimary"
+            android:id="@+id/aboutme_tv" />
+
+        <TextView
+            android:text="paragraph here.............................................................................."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/aboutme_tv"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/textColorPrimary"
+            android:maxLength="50"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:id="@+id/aboutme_desc_tv" />
+
+    </RelativeLayout>
+    <TextView
+        android:text="Projects"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#111113"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"
+        android:id="@+id/projects_textview" />
+    <TextView
+        android:text="Education"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#111113"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back"
+        android:id="@+id/education_textview" />
+    <TextView
+        android:text="Interests"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textColor="#111113"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:id="@+id/interests_textview" />
+
+
+
+
+
+
+
+</LinearLayout>

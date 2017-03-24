@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/back">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+    <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+
+            android:id="@+id/imageView"
+
+            android:layout_weight="1.25"/>
+
+        <!--android:background="@drawable/image_border"-->
+
+
+    <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.75">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_editText"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"
+
+                 />
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="SIGN OUT"-->
+                <!--android:textSize="8sp"-->
+
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:id="@+id/signout_button"-->
+
+                <!--android:layout_toEndOf="@id/name_editText"-->
+                <!--android:layout_toRightOf="@id/name_editText"-->
+                <!--style="@style/Widget.AppCompat.Button.Small"/>-->
+            <TextView
+
+                android:layout_alignLeft="@id/name_editText"
+                android:paddingLeft="5dp"
+                android:layout_below="@id/name_editText"
+                android:textSize="15sp"
+
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_editText"
+                android:layout_marginTop="10dp"
+                />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="italic"-->
+                <!--android:id="@+id/name_editText"-->
+                <!--android:layout_toRightOf="@+id/name_label_tv"-->
+                <!--android:layout_toEndOf="@+id/name_label_tv"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textStyle="italic"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:id="@+id/email_editText"-->
+                <!--android:layout_toRightOf="@+id/email_label_tv"-->
+                <!--android:layout_toEndOf="@+id/email_label_tv"-->
+                <!--/>-->
+            <TextView
+                android:text="Experience: "
+                android:layout_alignStart="@id/email_editText"
+                android:layout_alignLeft="@id/email_editText"
+                android:layout_below="@id/email_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="normal"
+                android:id="@+id/exp_label_tv"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="77"
+                android:id="@+id/exp_tv"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:maxLength="9"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/email_editText"
+                android:layout_toRightOf="@+id/exp_label_tv"
+                android:layout_toEndOf="@+id/exp_label_tv"
+                />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:id="@+id/exp_editText"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="italic"
+                android:maxLength="9"
+                android:layout_below="@id/email_editText"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/exp_label_tv"
+                android:layout_toEndOf="@+id/exp_label_tv"
+
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT"
+                android:textSize="8sp"
+                android:id="@+id/edit_button"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/email_editText"
+                android:layout_toEndOf="@id/exp_tv"
+                android:layout_toRightOf="@id/exp_tv"
+                style="@style/Widget.AppCompat.Button.Small"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/ok_button"
+                android:layout_below="@id/email_editText"
+                android:layout_toEndOf="@id/exp_tv"
+                android:layout_toRightOf="@id/exp_tv"
+                style="@style/Widget.AppCompat.Button.Small"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

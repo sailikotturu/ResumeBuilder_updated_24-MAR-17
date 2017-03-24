@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/back"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:text="About me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/aboutme_tv" />
+
+    <TextView
+        android:text="paragraph here.............................................................................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/aboutme_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/aboutme_desc_tv" />
+
+
+
+    <Button
+        android:text="EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/aboutme_edit_button" />
+
+
+
+</RelativeLayout>

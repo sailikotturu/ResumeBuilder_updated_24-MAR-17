@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sailik.resumebuilder_24_feb">
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/resume_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!-- Splash screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="SIGN_OUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondScreen" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Resume" />
+        <activity
+            android:name=".AboutScreen"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sailik.resumebuilder_24_feb.ProfileActivity"/>
+        </activity>
+
+        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".ProjectList" />
+        <activity android:name=".EducationList" />
+        <activity
+            android:name=".HeaderActivity"
+            android:label="Edit Experience" />
+        <activity
+            android:name=".AboutMeActivity"
+            android:label="About Me" />
+        <activity android:name=".ProjectsActivity"
+            android:label="Projects"/>
+        <activity android:name=".EducationActivity"
+            android:label="Education"/>
+        <activity android:name=".InterestsActivity"
+            android:label="Interests"/>
+        <activity
+            android:name=".ProjectDialog"
+            android:label="Add Project" />
+        <activity
+            android:name=".EducationDialog"
+            android:label="Add Education" />
+        <activity android:name=".EditPhoto" />
+        <activity
+            android:name=".EditProject"
+            android:label="Edit Project" />
+        <activity android:name=".EditEducation"
+            android:label="Edit Education"/>
+        <activity android:name=".EditInterest"
+            android:label="Edit Interest"/>
+        <activity
+            android:name=".InterestsDialog"
+            android:label="Add Interest" />
+
+    </application>
+
+</manifest>

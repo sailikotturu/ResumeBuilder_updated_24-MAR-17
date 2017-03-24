@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/drawer_bg"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:text="Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/interests_label_tv" />
+    <TextView
+        android:text="Interest 1 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interests_label_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest1_tv" />
+    <EditText
+        android:text="Interest 1 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/interests_label_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:maxLength="20"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest1_editText" />
+
+    <TextView
+        android:text="Interest 2 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest1_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest2_tv" />
+    <EditText
+        android:text="Interest 2 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/interest1_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest2_editText" />
+    <TextView
+        android:text="Interest 3 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest2_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest3_tv" />
+    <EditText
+        android:text="Interest 3 here.. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/interest2_tv"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:maxLength="20"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/interest3_editText" />
+    <Button
+        android:text="EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest3_tv"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/interests_edit_button" />
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest3_tv"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:id="@+id/interests_ok_button" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.example.sailik.resumebuilder_24_feb.MainActivity">
+
+    <TextView
+        android:text="Resume Builder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textStyle="italic"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:id="@+id/textView" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_sign_out"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/btn_logout_from_google"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_revoke_access"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/btn_revoke_access"-->
+        <!--android:visibility="gone" />-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_sign_in"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="20dp"
+
+        />
+</RelativeLayout>

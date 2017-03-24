@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_bg"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <TextView
+        android:text="Projects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/projects_label_tv" />
+    <TextView
+        android:text="Project Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projects_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/projectname_label_tv" />
+    <TextView
+        android:text="Project Name here.............................................................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/projects_label_tv"
+        android:layout_toRightOf="@+id/projectname_label_tv"
+        android:layout_toEndOf="@+id/projectname_label_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/projectname_desc_tv" />
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectname_label_tv"
+        android:layout_alignLeft="@+id/projectname_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/projectdesc_label_tv" />
+    <TextView
+        android:text="Description here......................................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/projectdesc_label_tv"
+        android:layout_toRightOf="@+id/projectdesc_label_tv"
+        android:layout_below="@+id/projectname_desc_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="100"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/projectdesc_tv" />
+
+
+    <TextView
+        android:text="Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectdesc_tv"
+        android:layout_alignLeft="@+id/projectdesc_label_tv"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/projectduration_label_tv" />
+
+    <TextView
+        android:text="Duration here...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@+id/projectduration_label_tv"
+        android:layout_toRightOf="@+id/projectduration_label_tv"
+        android:layout_below="@+id/projectdesc_tv"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:maxLength="30"
+
+        android:layout_marginRight="20dp"
+
+        android:id="@+id/projectduration_tv" />
+
+
+    <TextView
+        android:text="Read more..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:clickable="true"
+
+        android:layout_below="@+id/projectduration_tv"
+        android:layout_alignRight="@+id/project_edit_button"
+        android:layout_marginTop="10dp"
+        android:id="@+id/readmore_tv" />
+    <Button
+        android:text="EDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        style="@style/Widget.AppCompat.Button.Small"
+
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:id="@+id/project_edit_button" />
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/readmore_tv"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/projectdesc_tv"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:visibility="gone"
+        android:id="@+id/project_ok_button" />
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        style="@style/Widget.AppCompat.Button.Small"
+
+        android:layout_marginTop="5dp"
+
+        android:textSize="15sp"
+        android:textStyle="normal"
+
+        android:id="@+id/addproject_button" />
+</RelativeLayout>
